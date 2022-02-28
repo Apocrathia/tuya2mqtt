@@ -1,0 +1,21 @@
+name: "tuya2mqtt"
+version: 20210918
+slug: tuya2mqtt
+description: >-
+  "Long description"
+arch:
+  - amd64
+  - aarch64
+url: "https://github.com/Apocrathia/tuya2mqtt"
+image: thetonyfav/tuya2mqtt
+environment:
+  MQTT_HOST: "10.0.0.255"
+  MQTT_PORT: "1883"
+  MQTT_USER: "user"
+  MQTT_PASSWORD: "pass"
+  MQTT_CLIENT: "tuya2mqtt-dekala"
+  MQTT_QOS: "1"
+  MQTT_LOGGING: "1"
+  DEVICE_TOPIC: "tasmota_XXXXXX"
+  DEVICE_TYPE: "dekala_table_lamp"
+  HA_TOPIC: "tuya2mqtt/dekala_table_lamp/"
